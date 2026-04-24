@@ -1,0 +1,239 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CK3 Knight Reference</title>
+<style>
+body { font-family: Calibri, Arial, sans-serif; line-height: 1.35; margin: 28px; color: #111; }
+h2 { margin: 16px 0 6px; font-size: 18px; }
+p { margin: 3px 0; white-space: pre-wrap; }
+.sp { height: 8px; }
+.filter-wrap { margin: 10px 0 14px; padding: 10px 12px; border: 1px solid #d7d7d7; border-radius: 8px; background: #fafafa; }
+.filter-title { font-weight: 700; margin-bottom: 6px; }
+.filter-row { display: flex; flex-wrap: wrap; gap: 14px; }
+.filter-item { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; }
+.ke-pos { color: #C65A00; font-weight: 700; }
+.ke-neg { color: #F5B87A; font-weight: 700; }
+.kl-pos { color: #5A2E9A; font-weight: 700; }
+.kl-neg { color: #C3A6EB; font-weight: 700; }
+.aa-pos { color: #1E7D32; font-weight: 700; }
+.aa-neg { color: #9DD8A2; font-weight: 700; }
+.agg-pos { color: #1E7D32; font-weight: 700; }
+.agg-neg { color: #9DD8A2; font-weight: 700; }
+.hide-ke .ke-pos, .hide-ke .ke-neg { display: none; }
+.hide-kl .kl-pos, .hide-kl .kl-neg { display: none; }
+.hide-aa .aa-pos, .hide-aa .aa-neg { display: none; }
+
+.line-hidden { display: none !important; }
+</style>
+</head>
+<body>
+<p>CK3 KNIGHT REFERENCE (VANILLA, NO MODS)</p>
+<p>Legend:</p>
+<p>- KE = Knight Effectiveness</p>
+<p>- KL = Knight Limit (max knight amount)</p>
+<p>- AA = Accolades Available</p>
+<p>- AGG = Accolade Glory Gain</p>
+<div class="filter-wrap">
+  <div class="filter-title">Show/Hide Buff Types</div>
+  <div class="filter-row">
+    <label class="filter-item"><input type="checkbox" id="toggle-ke" checked> <span class="ke-pos">KE</span></label>
+    <label class="filter-item"><input type="checkbox" id="toggle-kl" checked> <span class="kl-pos">KL</span></label>
+    <label class="filter-item"><input type="checkbox" id="toggle-aa" checked> <span class="aa-pos">AA</span></label>
+    <label class="filter-item"><input type="checkbox" id="toggle-agg" checked> <span class="agg-pos">AGG</span></label>
+  </div>
+</div>
+<p>MILITARY ACADEMY STACKING</p>
+<p>- Military Academies stack across different duchy capitals in your personal domain if you personally hold those duchy capitals and their duchy titles.</p>
+<p>- You only get one duchy-building slot per duchy capital.</p>
+<p>CULTURE TRADITIONS</p>
+<p>- Only the Strong: <span class="ke-pos">KE +100%</span>, <span class="kl-pos">KL +2</span>, <span class="agg-pos">AGG +20%</span> (gate: cannot be picked by Egalitarian ethos cultures)</p>
+<p>- The Right to Prove: <span class="ke-pos">KE +25%</span>, <span class="kl-neg">KL -2</span> (gate: mutually exclusive with Performative Honor)</p>
+<p>- Khadga Puja: <span class="ke-pos">KE +10%</span>, <span class="agg-pos">AGG +10%</span> (gate: Indo-Aryan heritage; cannot be picked by Egalitarian ethos cultures)</p>
+<p>- Frugal Armorers: <span class="ke-neg">KE -40%</span>, <span class="kl-pos">KL +5</span></p>
+<p>- Imperial Tagmata: <span class="ke-neg">KE -25%</span> (gate: Greek culture/Greek ancestor or Byzantine heritage; hidden if Roman Legacy is present)</p>
+<p>- Chanson de Geste: <span class="kl-pos">KL +2</span>, <span class="agg-pos">AGG +20%</span> (gate: Frankish heritage; mutually exclusive set with Futuwaa, Druzhina, Martial Admiration)</p>
+<p>- Druzhina: <span class="kl-pos">KL +2</span>, <span class="agg-pos">AGG +20%</span> (gate: East Slavic heritage; mutually exclusive set with Futuwaa, Chanson de Geste, Martial Admiration)</p>
+<p>- Futuwaa: <span class="kl-pos">KL +2</span>, <span class="agg-pos">AGG +20%</span> (gate: Iranian heritage; mutually exclusive set with Druzhina, Chanson de Geste, Martial Admiration)</p>
+<p>- Hirds: <span class="kl-pos">KL +1</span>, <span class="agg-pos">AGG +10%</span> (gate: tribal government to pick; hidden if Warrior Culture or Coastal Warriors present; shown mainly for North Germanic/Old Saxon/Norse lineage contexts)</p>
+<p>- Martial Admiration: <span class="kl-pos">KL +2</span>, <span class="agg-pos">AGG +10%</span> (gate: culture cannot be Pacifistic; unavailable to Iranian/Frankish/East Slavic heritages and unavailable if Futuwaa, Druzhina, or Chanson de Geste is present)</p>
+<p>- Performative Honor: <span class="kl-pos">KL +1</span>, <span class="agg-pos">AGG +10%</span> (gate: North Germanic heritage; mutually exclusive with Trials-by-Combat and The Right to Prove)</p>
+<p>- Trials-by-Combat: <span class="kl-pos">KL +1</span>, <span class="agg-pos">AGG +10%</span> (gate: North Germanic heritage; mutually exclusive with Performative Honor)</p>
+<p>- Chivalry: <span class="agg-pos">AGG +10%</span> (gate: Brythonic, Central Germanic, Frankish, Goidelic, Iberian, Latin, or West Germanic heritage)</p>
+<p>- Warrior Culture: <span class="agg-pos">AGG +10%</span> (gate: tribal government and non-Pacifistic culture; cannot coexist with Hirds or Coastal Warriors)</p>
+<p>- Warriors by Merit: <span class="agg-pos">AGG +10%</span></p>
+<p>- Recognition of Talent: <span class="agg-pos">AGG +10%</span></p>
+<p>- Garuda Warriors: <span class="agg-pos">AGG +10%</span> (gate: Dravidian heritage)</p>
+<p>- Royal Army: <span class="agg-pos">AGG +10%</span> (gate: Burman heritage)</p>
+<p>INNOVATIONS</p>
+<p>- Bannus: <span class="aa-pos">AA +1</span></p>
+<p>- Knighthood: <span class="ke-pos">KE +20%</span>, <span class="aa-pos">AA +1</span>, <span class="agg-pos">AGG +10%</span></p>
+<p>- Noblesse Oblige: <span class="agg-pos">AGG +10%</span></p>
+<p>LIFESTYLE PERKS</p>
+<p>- Chivalric Dominance: <span class="ke-pos">KE +75%</span>, <span class="agg-pos">AGG +10%</span></p>
+<p>- Defensive Negotiations (Landless Adventurer side): <span class="ke-pos">KE +10%</span></p>
+<p>- Household Guard: <span class="kl-pos">KL +4</span> (non-Administrative) or <span class="kl-pos">KL +2</span> (Administrative)</p>
+<p>DYNASTY LEGACIES</p>
+<p>- House of Warriors: <span class="ke-pos">KE +15%</span></p>
+<p>- Renowned Name: <span class="kl-pos">KL +1</span>, <span class="aa-pos">AA +1</span></p>
+<p>- War Tales: <span class="ke-pos">KE +10%</span>, <span class="kl-pos">KL +5</span></p>
+<p>- War Tales visibility: The track is normally shown for dynasties with a Japanese government (Japanese Administrative or Japanese Feudal), unless you use the Unrestricted Dynasty Legacies game rule.</p>
+<p>DUCHY BUILDING CATEGORIES</p>
+<p>- Military Academies: <span class="ke-pos">KE +25% to +75%</span>, <span class="kl-pos">KL +2 to +6</span></p>
+<p>- Royal Armories: <span class="ke-pos">KE +15% to +45%</span> (KE part requires Metalworkers parameter)</p>
+<p>DOMAIN BUILDING CATEGORIES (NON-DUCHY)</p>
+<p>- Hill Farms: <span class="ke-pos">KE +1% to +8%</span></p>
+<p>- Blacksmiths: <span class="ke-pos">KE +1% to +8%</span></p>
+<p>- Wind Furnaces: <span class="ke-pos">KE +3% to +8%</span></p>
+<p>- Camelry: <span class="ke-pos">KE +2% to +16%</span></p>
+<p>- Elephantry: <span class="ke-pos">KE +2% to +16%</span></p>
+<p>- War Camps: <span class="ke-pos">KE +10% to +20%</span>, <span class="kl-pos">KL +1 to +2</span></p>
+<p>- Wantilan: <span class="ke-pos">KE +5% to +20%</span></p>
+<p>- Martial Grants: <span class="ke-pos">KE +10% to +15%</span>, <span class="kl-pos">KL +1</span></p>
+<p>- Regimental Grounds (high tiers): <span class="kl-pos">KL +1</span></p>
+<p>SPECIAL BUILDINGS / SPECIAL HOLDINGS</p>
+<p>- Cologne Cathedral (Cologne): <span class="ke-pos">KE +20%</span></p>
+<p>- The Prophetic Mosque (Medina): <span class="ke-pos">KE +20%</span></p>
+<p>- Hagia Sophia Cathedral (Byzantion): <span class="ke-pos">KE +20%</span>, <span class="kl-pos">KL +2</span></p>
+<p>- Hagia Sophia Mosque (Byzantion): <span class="ke-pos">KE +20%</span>, <span class="kl-pos">KL +2</span></p>
+<p>- Dome of the Rock (Jerusalem): <span class="ke-pos">KE +20%</span></p>
+<p>- The Third Temple (Jerusalem): <span class="ke-pos">KE +20%</span></p>
+<p>- Heddal Stave Church (Vestfold): <span class="ke-pos">KE +20%</span>, <span class="kl-pos">KL +1</span></p>
+<p>- Temple of Uppsala (Uppland): <span class="ke-pos">KE +15%</span></p>
+<p>- Uppsala Cathedral (Uppland): <span class="ke-pos">KE +20%</span></p>
+<p>- Grand Temple (variable pagan holy site): <span class="ke-pos">KE +15%</span></p>
+<p>- Hall of Heroes (variable holy site): <span class="ke-pos">KE +5% to +25%</span></p>
+<p>- Three Pagodas of Dali (Dali): <span class="kl-pos">KL +2</span></p>
+<p>HOLY SITES (FAITH-BASED EFFECTS)</p>
+<p>- Anlong (Yanchuan): <span class="ke-pos">KE +20%</span> - Dab Qhuas, Moism</p>
+<p>- Antioch (Antiocheia): <span class="ke-pos">KE +10%</span> - Apostolic, Bogomilism, Coptic, Iconoclasm, Messalianism, Nestorianism, Orthodoxy, Paulicianism</p>
+<p>- Ava (Ava): <span class="ke-pos">KE +5%</span> - Ari</p>
+<p>- Ayodhya (Ayodhya): <span class="ke-pos">KE +10%</span> - Kalikula Shaktism, Krishnaism, Saurism, Smartism, Srikula Shaktism, Vaishnavism</p>
+<p>- Borobudur (Mataram): <span class="ke-pos">KE +10%</span> - Mahayana</p>
+<p>- Dali (Dali): <span class="ke-pos">KE +20%</span> - Acharya, Bimoism</p>
+<p>- Daura (Daura): <span class="ke-pos">KE +10%</span> - Bori</p>
+<p>- Itsukushima-jinja (Aki): <span class="ke-pos">KE +20%</span> - Shinto, Utaki</p>
+<p>- Jorvik (North Riding): <span class="ke-pos">KE +20%</span> - Asatru</p>
+<p>- Karakorum (Karakorum): <span class="ke-pos">KE +20%</span> - Tengriism</p>
+<p>- Kyiv (Kyiv): <span class="ke-pos">KE +20%</span> - Slovianska Pravda</p>
+<p>- Lejre (Sjaelland): <span class="ke-pos">KE +20%</span> - no active faith assignment in this vanilla build</p>
+<p>- Mecca (Mecca): <span class="ke-pos">KE +10%</span> - many Islamic faiths (Ash&#39;arism, Imamism, Isma&#39;ilism, Maturidism, Zayidism, etc.)</p>
+<p>- Mount Mian (Taiyuan): <span class="ke-pos">KE +10%</span> - Shangqing</p>
+<p>- Siffa (Palmyra): <span class="ke-pos">KE +20%</span> - Azraqism, Sufrism</p>
+<p>- Adur Gushnasp (Urmiya): <span class="ke-pos">KE +20%</span> - Zoroastrian faiths + Cainitism</p>
+<p>- Toledo (Toledo): <span class="ke-pos">KE +10%</span> - Adoptionism, Mozarabism</p>
+<p>- Torun (Chelmno): <span class="ke-pos">KE +20%</span> - Vidilism, Ukonusko</p>
+<p>- Awkar (Awkar): <span class="kl-pos">KL +1</span> - Bidaism, Siguism</p>
+<p>- Zhaotong (Huizhou): <span class="kl-pos">KL +1</span> - Bimoism</p>
+<p>FAITH TENETS</p>
+<p>- Armed Pilgrimages: <span class="agg-pos">AGG +10%</span></p>
+<p>- Warmonger: <span class="agg-pos">AGG +10%</span></p>
+<h2>COURT TYPES</h2>
+<p>- Warlike Court: <span class="ke-pos">KE +10%</span></p>
+<p>- Tribal Court: <span class="ke-pos">KE +5%</span></p>
+<p>COUNCIL TASKS</p>
+<p>- Train Commanders (Marshal task): scaling KE</p>
+<p>- Manage Royal Guards (Marshal task): scaling KE</p>
+<p>COURT POSITIONS</p>
+<p>- Master of the Horse (court position, liege effect): <span class="ke-pos">KE +1% to +8%</span>, <span class="kl-pos">KL +1 to +3</span></p>
+<p>- Master of the Horse (court position, holder self effect): <span class="ke-pos">KE +15%</span></p>
+<p>- Cherbi (court position, liege effect): <span class="kl-pos">KL +1 to +3</span></p>
+<p>- Kenneler (camp officer): <span class="ke-pos">KE +5% to +33%</span></p>
+<p>COURT POSITION TASKS</p>
+<p>- Instill Martial Discipline (Grand Guardian task; Grand Guardian is a Celestial empire-tier independent ruler position): <span class="ke-pos">KE +5% to +30%</span></p>
+<h2>GOVERNMENTS</h2>
+<p>- Soryo: <span class="ke-pos">KE +10%</span>, <span class="kl-pos">KL +2</span></p>
+<p>- Adventurer: <span class="kl-pos">KL +2</span></p>
+<p>- Administrative: <span class="kl-neg">KL -5</span>, <span class="aa-neg">AA -1</span></p>
+<p>- Ritsuryo: <span class="kl-neg">KL -5</span></p>
+<p>- Meritocratic: <span class="kl-neg">KL -5</span>, <span class="aa-neg">AA -1</span></p>
+<p>- Celestial: <span class="kl-neg">KL -5</span>, <span class="aa-neg">AA -1</span></p>
+<p>- Meritocratic Khanate: <span class="kl-neg">KL -5</span>, <span class="aa-neg">AA -1</span></p>
+<p>- Herder: <span class="kl-neg">KL -100</span></p>
+<h2>CAMP PURPOSE LAWS</h2>
+<p>- Swords-for-Hire: <span class="kl-pos">KL +8</span></p>
+<p>- Freebooters: <span class="kl-pos">KL +3</span></p>
+<p>- Legitimists: <span class="kl-pos">KL +8</span></p>
+<p>NOMAD DOMICILE BUILDINGS</p>
+<p>- Accolade Yurt: <span class="agg-pos">AGG +10%</span> (tier 1), <span class="agg-pos">AGG +5%</span> (tiers 2-6)</p>
+<p>CORE SYSTEM BASELINES</p>
+<p>- Court Grandeur above expected (tier 5): <span class="kl-pos">KL +1</span></p>
+<p>- Rank baseline: Count <span class="kl-pos">KL +1</span>, <span class="aa-neg">AA -2</span>; Duke <span class="kl-pos">KL +2</span>; King <span class="kl-pos">KL +3</span>, <span class="aa-pos">AA +1</span>; Emperor <span class="kl-pos">KL +4</span>, <span class="aa-pos">AA +2</span>; Hegemon <span class="kl-pos">KL +9</span>, <span class="aa-pos">AA +2</span></p>
+<p>- Prestige level baseline: level 2 <span class="kl-pos">KL +1</span>, level 3 +2, level 4 +3, level 5 +4</p>
+<p>- Martial baseline scaling: <span class="kl-pos">KL +0.2</span> per Martial point</p>
+<h2>ACCOLADES</h2>
+<p>- Blademaster: <span class="ke-pos">KE +40%</span> / +80%</p>
+<p>- Mentor: <span class="kl-pos">KL +1</span> / +1 / +2</p>
+<p>ARTIFACTS</p>
+<p>- Generic Knight Effectiveness rolls: <span class="ke-pos">KE +2% to +16%</span></p>
+<p>- Generic Knight Limit rolls: <span class="kl-pos">KL +1 to +2</span></p>
+<p>- Named historical artifacts: variable, can give KE and KL</p>
+<p>- Venerated Head (accolade variant artifact modifier): <span class="agg-pos">AGG +5%</span> / +10% / +20%</p>
+<p>SITUATIONAL MODIFIERS</p>
+<p>- Migratory Warband (migration modifier): <span class="aa-pos">AA +2</span> / +3 / +4</p>
+<p>- Swansong: <span class="agg-pos">AGG +10%</span></p>
+<p>- A Noble Fight: <span class="agg-pos">AGG +33%</span></p>
+<p>TRAITS</p>
+<p>- Knight-Errant: <span class="kl-pos">KL +2</span> base (track adds more)</p>
+<p>- Hastiluder (Foot capstone): <span class="kl-pos">KL +2</span></p>
+<p>- Gallant: <span class="agg-pos">AGG +20%</span></p>
+<div class="sp"></div>
+<script>
+(function () {
+  const rules = [
+    { id: 'toggle-ke', re: /\s*,?\s*<span class=\"(?:ke-pos|ke-neg)\">[^<]*<\/span>/g },
+    { id: 'toggle-kl', re: /\s*,?\s*<span class=\"(?:kl-pos|kl-neg)\">[^<]*<\/span>/g },
+    { id: 'toggle-aa', re: /\s*,?\s*<span class=\"(?:aa-pos|aa-neg)\">[^<]*<\/span>/g },
+    { id: 'toggle-agg', re: /\s*,?\s*<span class=\"(?:agg-pos|agg-neg)\">[^<]*<\/span>/g }
+  ];
+  const buffSpanRe = /<span class=\"(?:ke|kl|aa|agg)-(?:pos|neg)\">[^<]*<\/span>/;
+  const lines = Array.from(document.querySelectorAll('p'));
+  for (const p of lines) {
+    if (p.closest('.filter-wrap')) continue;
+    p.dataset.baseHtml = p.innerHTML;
+  }
+  function cleanup(html) {
+    return html
+      .replace(/:\s*,\s*/g, ': ')
+      .replace(/,\s*,+/g, ', ')
+      .replace(/,\s*;\s*/g, '; ')
+      .replace(/;\s*;/g, '; ')
+      .replace(/\(\s*,\s*/g, '(')
+      .replace(/,\s*\)/g, ')')
+      .replace(/:\s*;/g, ': ')
+      .replace(/\s+,/g, ',')
+      .replace(/\s{2,}/g, ' ')
+      .replace(/,\s*$/g, '')
+      .trim();
+  }
+  function sync() {
+    for (const p of lines) {
+      if (p.closest('.filter-wrap')) continue;
+      let html = p.dataset.baseHtml || p.innerHTML;
+      const hadBuff = buffSpanRe.test(html);
+      for (const rule of rules) {
+        const box = document.getElementById(rule.id);
+        if (box && !box.checked) {
+          html = html.replace(rule.re, '');
+        }
+      }
+      html = cleanup(html);
+      p.innerHTML = html;
+      const hasVisibleBuff = buffSpanRe.test(html);
+      p.classList.toggle('line-hidden', hadBuff && !hasVisibleBuff);
+    }
+  }
+  for (const rule of rules) {
+    const box = document.getElementById(rule.id);
+    if (!box) continue;
+    box.addEventListener('change', sync);
+  }
+  sync();
+})();
+</script>
+</body>
+</html>
+
+
+
+
